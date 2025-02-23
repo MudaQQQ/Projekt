@@ -1,0 +1,11 @@
+services:
+  web:
+    image: dockerfile
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./db:/app/db
+
+volumes:
+  db:
